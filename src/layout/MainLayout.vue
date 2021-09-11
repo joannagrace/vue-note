@@ -2,7 +2,7 @@
     <div class="d-flex flex-column h-100">
         <navbar/>
         <main class="flex-shrink-0">
-             <breadcrumb :current-page="page" />
+             <!-- <breadcrumb :current-page="page" /> -->
              <router-view/>
         </main>
         <sticky-footer/>
@@ -12,13 +12,13 @@
 <script>
 import Navbar from '../components/Navbar';
 import StickyFooter from '../components/Footer';
-import Breadcrumb from '../components/Breadcrumb';
+// import Breadcrumb from '../components/Breadcrumb';
 
 export default {
     components: {
         Navbar,
         StickyFooter,
-        Breadcrumb,
+        // Breadcrumb,
     },
     watch:{
         $route (to, from){
